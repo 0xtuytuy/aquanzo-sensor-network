@@ -57,10 +57,10 @@ def main():
     device_file = device_folder + '/w1_slave'
     
     while True:
-	    temp_c, temp_f = read_temp()
+        temp_c, temp_f = read_temp()
         testReading = TempReading('test_1', date.today(), temp_c, temp_f)
         writeDatatToGoogle(testReading)
-	    time.sleep(1)
+        time.sleep(1)
 	
 if __name__ == "__main__":
     main()
